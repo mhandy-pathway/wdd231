@@ -87,14 +87,17 @@ function refreshCourseContent(courseArray) {
     courseContentDiv.appendChild(nav);
     const all_button = document.createElement('button');
     all_button.classList.add('all');
+    all_button.ariaLabel = 'All Courses';
     all_button.addEventListener('click', () => { refreshCourseContent(courses); });
     nav.appendChild(all_button);
     const wdd_button = document.createElement('button');
     wdd_button.classList.add('wdd');
+    wdd_button.ariaLabel = 'WDD Courses';
     wdd_button.addEventListener('click', () => { refreshCourseContent(courses.filter(course => course.subject === 'WDD')); });
     nav.appendChild(wdd_button);
     const cse_button = document.createElement('button');
     cse_button.classList.add('cse');
+    cse_button.ariaLabel = 'CSE Courses';
     cse_button.addEventListener('click', () => { refreshCourseContent(courses.filter(course => course.subject === 'CSE')); });
     nav.appendChild(cse_button);
 
