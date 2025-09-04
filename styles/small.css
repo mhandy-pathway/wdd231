@@ -65,7 +65,7 @@ header nav {
     flex-direction: column;
     top: 100%;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background-color: var(--color1);
 }
 
