@@ -1,0 +1,72 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /***************************** HEADER *****************************/
+    header {
+        grid-template-columns: 34px auto;
+        row-gap: 10px;
+        padding-bottom: 0;
+    }
+
+    header nav {
+        display: flex;
+        position: initial;
+        top: initial;
+        left: initial;
+        grid-column: 1/3;
+        flex-direction: row;
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+    }
+
+    header nav a {
+        border: none;
+    }
+
+    header nav a:first-child {
+        border: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /***************************** MAIN *****************************/
+    main {
+        grid-template-columns: 1fr 300px;
+        column-gap: 10px;
+    }
+
+    main h1 {
+        grid-column: 1/3;
+    }
+
+    main section.courses {
+        grid-column: 1/3;
+    }
+
+    /***************************** COURSES *****************************/
+    #courseContent nav button.all:before {
+        content: 'All Courses';
+    }
+
+    #courseContent nav button.wdd:before {
+        content: 'WDD Courses';
+    }
+
+    #courseContent nav button.cse:before {
+        content: 'CSE Courses';
+    }
+
+    #courseContent div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+}

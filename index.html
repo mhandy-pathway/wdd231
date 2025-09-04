@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Matt Handy's Web Frontend Development I Homepage</title>
+    <meta name="description" content="WDD231 - Matt Handy's Web Frontend Development I Homepage">
+    <meta name="author" content="Matt Handy">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course-list.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/home.svg" alt="Home Icon" width="640" height="640">
+        <span>Matt Handy's Web Frontend Development I Homepage</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="aboutme">
+            <h2>About Me</h2>
+            <div>
+                <p>My name is Matt Handy. I grew up in Orem, Utah. I have been living with my wife Alice for the past 7
+                    years in the country of Paraguay, which is where Alice is from.</p>
+                <p>I enjoy playing guitar, singing, video games, and good food.</p>
+                <p>I have been a web application developer for 25 years, but never got my degree. I decided that it
+                    would probably be a good thing to get at this point in my life.</p>
+            </div>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <div>
+                <img src="images/mattandalice.webp" alt="Picture of Matt and Alice Handy" width="225" height="201">
+            </div>
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div id="courseContent">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://github.com/mhandy-pathway/wdd231" alt="GitHub Repository" target="_blank"><img
+                    src="images/github.svg"></a>
+            <a href="https://www.linkedin.com/in/handymatt/" alt="LinkedIn Profile" target="_blank"><img
+                    src="images/linkedin.svg"></a>
+            <a href="https://www.facebook.com/matt.handy.90" alt="Facebook Profile" target="_blank"><img
+                    src="images/facebook.svg"></a>
+            <a href="https://api.whatsapp.com/send?phone=595982259998" alt="WhatsApp Number" target="_blank"><img
+                    src="images/whatsapp.svg"></a>
+        </nav>
+        <p><span id="currentyear"></span> | Matt Handy | Villa Elisa, Paraguay</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
