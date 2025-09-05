@@ -85,6 +85,7 @@ header nav a:first-child {
     border-top: solid 2px black;
 }
 
+header nav a.current,
 header nav a:hover {
     background-color: var(--color2);
 }
