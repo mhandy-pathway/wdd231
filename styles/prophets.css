@@ -1,0 +1,37 @@
+header {
+    text-align: center;
+    border-bottom: solid 2px #000;
+    background: linear-gradient(to top, #777, white 30%)
+}
+
+header h1 {
+    color: #009;
+}
+
+div#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    max-width: 320px;
+    box-sizing: border-box;
+    border: solid 2px #009;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ddf;
+    margin: 10px;
+}
+
+section h2 {
+    color: #009;
+}
+
+section img {
+    box-shadow: 0px 0px 10px 0px #000;
+    box-sizing: border-box;
+    width: 85%;
+    height: auto;
+    margin: 10px;
+}
