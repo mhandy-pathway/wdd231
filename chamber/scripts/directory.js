@@ -32,7 +32,10 @@ function displayMembersInGrid() {
 
         const img = document.createElement('img');
         img.setAttribute('src', member.image);
+        img.setAttribute('width', 150);
+        img.setAttribute('height', 100);
         img.setAttribute('alt', `Image of ${member.name}`);
+        img.setAttribute('loading', 'lazy');
         section.appendChild(img);
 
         const nameDiv = document.createElement('div');

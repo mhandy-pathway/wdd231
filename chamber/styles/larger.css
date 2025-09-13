@@ -11,7 +11,7 @@
 
     /***************************** HEADER *****************************/
     header {
-        grid-template-columns: 34px auto;
+        grid-template-columns: 60px auto;
         row-gap: 10px;
         padding-bottom: 0;
     }

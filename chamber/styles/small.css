@@ -39,7 +39,7 @@ footer {
 header {
     display: grid;
     position: relative;
-    grid-template-columns: 34px auto 44px;
+    grid-template-columns: 60px auto 44px;
     background-color: var(--color2);
     padding: 5px 0;
     align-items: center;
@@ -49,8 +49,8 @@ header {
 
 header img {
     display: block;
-    width: 24px;
-    height: auto;
+    width: 50px;
+    height: 50px;
     padding-bottom: 2px;
     margin-left: 10px;
 }
@@ -146,11 +146,11 @@ section h2 {
 }
 
 /***************************** DIRECTORY MEMBERS *****************************/
-nav.directory {
+div.directory-btns {
     text-align: center;
 }
 
-nav.directory img {
+div.directory-btns img {
     width: 44px;
     height: auto;
     margin: 4px 8px;
@@ -212,6 +212,7 @@ table.directory thead th {
     background-color: var(--color1);
     color: var(--color1-text);
     font-weight: 700;
+    padding: 4px 8px;
 }
 
 table.directory thead {

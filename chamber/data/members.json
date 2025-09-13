@@ -4,7 +4,7 @@
         "address": "Americo Picco c/ Nanawa",
         "phone": "0985-188-604",
         "website": "https://www.google.com/maps/place/Pizzeria+Lujan/@-25.37686,-57.5833986,248m/data=!3m1!1e3!4m6!3m5!1s0x945dabdbdc2a546d:0x242a3d86e9c3f49c!8m2!3d-25.3764966!4d-57.583327!16s%2Fg%2F11c2pttq43?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D",
-        "image": "images/lujan.webp",
+        "image": "https://mhandy-pathway.github.io/wdd231/chamber/images/lujan.webp",
         "membershipLevel": 1
     },
     {
@@ -12,7 +12,7 @@
         "address": "Nanawa c/ Americo Picco",
         "phone": "0983-970-545",
         "website": "https://www.instagram.com/cocoa_py/?igshid=YmMyMTA2M2Y%3D",
-        "image": "images/cocoa.webp",
+        "image": "https://mhandy-pathway.github.io/wdd231/chamber/images/cocoa.webp",
         "membershipLevel": 1
     },
     {
@@ -20,7 +20,7 @@
         "address": "Otto Clar c/ Von Poleski",
         "phone": "(021) 942 132",
         "website": "https://www.facebook.com/viveroAB/?locale2=es_LA&_rdr",
-        "image": "images/viveroayb.webp",
+        "image": "https://mhandy-pathway.github.io/wdd231/chamber/images/viveroayb.webp",
         "membershipLevel": 1
     },
     {
@@ -28,7 +28,7 @@
         "address": "Americo Picco c/ E. Diaz",
         "phone": "0984-209-012",
         "website": "https://www.instagram.com/tala.comunicaciones/?igshid=NTc4MTIwNjQ2YQ%3D%3D",
-        "image": "images/tala.webp",
+        "image": "https://mhandy-pathway.github.io/wdd231/chamber/images/tala.webp",
         "membershipLevel": 1
     },
     {
@@ -36,7 +36,7 @@
         "address": "E. Diaz y Americo Picco",
         "phone": "0985-890-678",
         "website": "https://www.google.com/maps/place/Librer%C3%ADa+Germania/@-25.3770745,-57.5842336,20.75z/data=!4m6!3m5!1s0x945dabdbdc18dac3:0x8383e1c191f5ec82!8m2!3d-25.3769116!4d-57.5842626!16s%2Fg%2F1hdznn7h_?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D",
-        "image": "images/germania.webp",
+        "image": "https://mhandy-pathway.github.io/wdd231/chamber/images/germania.webp",
         "membershipLevel": 1
     },
     {
@@ -44,7 +44,7 @@
         "address": "Americo Picco c/ 16 de Julio",
         "phone": "0972489864",
         "website": "https://amandau.com.py/",
-        "image": "images/amandau.webp",
+        "image": "https://mhandy-pathway.github.io/wdd231/chamber/images/amandau.webp",
         "membershipLevel": 1
     },
     {
@@ -52,7 +52,7 @@
         "address": "Americo Picco c/ Von Poleski",
         "phone": "0984-401-986",
         "website": "https://www.google.com/maps/place/El+Super+De+La+Familia/@-25.3768043,-57.5841231,20z/data=!4m6!3m5!1s0x945dabdbd3ed54a1:0x6d9095d32cb767b4!8m2!3d-25.376668!4d-57.5841983!16s%2Fg%2F11c2ppf07q?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D",
-        "image": "images/superlafamilia.webp",
+        "image": "https://mhandy-pathway.github.io/wdd231/chamber/images/superlafamilia.webp",
         "membershipLevel": 1
     }
 ]
