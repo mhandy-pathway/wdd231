@@ -1,0 +1,67 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        box-sizing: border-box;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /***************************** HEADER *****************************/
+    header {
+        grid-template-columns: 34px auto;
+        row-gap: 10px;
+        padding-bottom: 0;
+    }
+
+    header nav {
+        display: flex;
+        position: initial;
+        top: initial;
+        left: initial;
+        grid-column: 1/3;
+        flex-direction: row;
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+    }
+
+    header nav a {
+        border: none;
+    }
+
+    header nav a:first-child {
+        border: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /***************************** DIRECTORY MEMBERS *****************************/
+    nav.directory img {
+        width: 30px;
+    }
+
+    table.directory thead {
+        display: table-header-group;
+    }
+
+    table.directory thead th:last-child {
+        display: none;
+    }
+
+    table.directory tbody td.large {
+        display: table-cell;
+    }
+
+    table.directory tbody td.small {
+        display: none;
+    }
+
+    /***************************** FOOTER *****************************/
+    footer {
+        flex-direction: row;
+    }
+}
