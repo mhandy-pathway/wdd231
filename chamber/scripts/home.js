@@ -23,7 +23,6 @@ async function loadFeaturedMembers() {
 }
 async function loadWeather() {
     const weather_data = await getWeatherData();
-    console.log(weather_data);
     displayWeather(weather_data);
 }
 
