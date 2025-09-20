@@ -20,12 +20,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base-small.css">
-    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/home-small.css">
     <link rel="stylesheet" href="styles/base-larger.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
+    <link rel="stylesheet" href="styles/home-larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -34,18 +34,55 @@
         <span>Villa Elisa Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
         <nav id="nav">
-            <a href="./">Home</a>
-            <a href="directory.html" class="current">Directory</a>
+            <a href="./" class="current">Home</a>
+            <a href="directory.html">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
     </header>
     <main>
+        <section class="hero">
+            <img src="images/villa-elisa-hero.webp" alt="I Love Villa Elisa Art located in Paseo Parque" loading="lazy">
+            <div class="call-to-action">
+                <p></p>
+                <a href="">Join Today</a>
+            </div>
+        </section>
         <section class="body">
-            <h1>Business Directory</h1>
-            <section class="directory-btns">
-                <img src="images/grid.svg" id="gridButton" alt="View Members in Grid">
-                <img src="images/list.svg" id="listButton" alt="View Members in List">
+            <h1>Home</h1>
+            <section class="events-and-weather">
+                <section class="box">
+                    <h2>Events</h2>
+                    <div>
+                        <p>
+                            <strong>Sat Sept 27th @ 8:00 AM</strong><br>
+                            The Church of Jesus Christ of Latter-Day Saints will be performing a service project at the plaza located at the corner of Virgen del Rosario and Ypacarai.
+                        </p>
+                        <p>
+                            <strong>Sun Nov 2nd @ 10:00 AM</strong><br>
+                            The Fernando de la Mora South Stake of the LDS Church will hold their Stake Conference at the church building located at Americo Picco and Carlos Antonio Lopez. 
+                        </p>
+                    </div>
+                </section>
+                <section class="box">
+                    <h2>Current Weather</h2>
+                    <div id="current-weather">
+                        <img id="weather-icon" src="" alt="">
+                        <div>
+                            <span id="current-temp"></span><br>
+                            <span id="current-conditions"></span><br>
+                            <span id="humidity"></span><br>
+                            <span id="wind"></span><br>
+                            <span id="sunrise"></span><br>
+                            <span id="sunset"></span><br>
+                        </div>
+                </section>
+                <section class="box">
+                    <h2>3-Hour Forecast</h2>
+                    <div id="three-hour-forecast">
+                        
+                    </div>
+                </section>
             </section>
             <section id="directory">
 

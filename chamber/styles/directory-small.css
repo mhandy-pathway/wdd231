@@ -1,0 +1,117 @@
+/***************************** DIRECTORY MEMBERS *****************************/
+section.member {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+section.member h2 {
+    display: block;
+    font-weight: 700;
+    background-color: var(--color2);
+    color: var(--color2-text);
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 10px 10px 0 0;
+}
+section.directory-btns {
+    text-align: center;
+}
+
+section.directory-btns img {
+    width: 44px;
+    height: auto;
+    margin: 4px 8px;
+    cursor: pointer;
+}
+
+div.member_grid {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+section.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    min-width: 250px;
+    height: 100%;
+}
+
+section.member div.name {
+    color: var(--color1);
+    font-weight: 700;
+}
+
+section.member img {
+    width: 150px;
+    border-radius: 10px;
+    margin: 8px;
+    height: auto;
+}
+
+section.member a,
+table.directory tbody a {
+    color: var(--color2);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section.member a:hover,
+table.directory tbody a:hover {
+    color: var(--color1);
+}
+
+
+table.directory {
+    border: solid 1px #000;
+    width: 100%;
+}
+
+table.directory thead th {
+    background-color: var(--color1);
+    color: var(--color1-text);
+    font-weight: 700;
+    padding: 4px 8px;
+}
+
+table.directory thead {
+    display: none;
+}
+
+table.directory tbody td {
+    background-color: white;
+    padding: 4px 8px;
+}
+
+table.directory tbody td.large {
+    display: none;
+}
+
+table.directory tbody td.small {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+    gap: 5px;
+}
+
+table.directory tbody td.small span.label {
+    text-align: right;
+    font-weight: bold;
+    color: var(--color1);
+}
+
+table.directory tbody td.small span,
+table.directory tbody td.small a {
+    font-size: 0.8rem;
+}
+
+table.directory tbody tr:nth-child(even) td {
+    background-color: var(--color3);
+}

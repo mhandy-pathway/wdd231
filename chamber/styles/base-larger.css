@@ -39,27 +39,6 @@
         display: none;
     }
 
-    /***************************** DIRECTORY MEMBERS *****************************/
-    nav.directory img {
-        width: 30px;
-    }
-
-    table.directory thead {
-        display: table-header-group;
-    }
-
-    table.directory thead th:last-child {
-        display: none;
-    }
-
-    table.directory tbody td.large {
-        display: table-cell;
-    }
-
-    table.directory tbody td.small {
-        display: none;
-    }
-
     /***************************** FOOTER *****************************/
     footer {
         flex-direction: row;
