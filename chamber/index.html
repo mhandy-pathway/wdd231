@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Elisa Chamber of Commerce - Directory of Local Businesses</title>
-    <meta name="description" content="A Directory of Local Businesses from the Villa Elisa Chamber of Commerce">
+    <title>Villa Elisa Chamber of Commerce - Home</title>
+    <meta name="description" content="The Villa Elisa Chamber of Commerce services all companies and organizations found within the city of Villa Elisa.">
     <meta name="author" content="Matt Handy">
-    <meta property="og:title" content="Villa Elisa Chamber of Commerce - Directory of Local Businesses">
+    <meta property="og:title" content="Villa Elisa Chamber of Commerce - Home">
     <meta property="og:description"
-        content="A directory listing of businesses in Villa Elisa, Paraguay. The Chamber of Commerce has worked tirelessly to compile this information to help our citizens find the services that they need.">
+        content="The Villa Elisa Chamber of Commerce services all companies and organizations found within the city of Villa Elisa. On this homepage businesses can find information on how to become a member and information about other featured businesses.">
     <meta property="og:image" content="https://mhandy-pathway.github.io/wdd231/chamber/images/villa-elisa.webp">
-    <meta property="og:url" content="https://mhandy-pathway.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://mhandy-pathway.github.io/wdd231/chamber/index.html">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/home-larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/home.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
 </head>
 
 <body>
@@ -41,16 +41,16 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <div class="hero">
             <img src="images/villa-elisa-hero.webp" alt="I Love Villa Elisa Art located in Paseo Parque" loading="lazy">
             <div class="call-to-action">
                 <p></p>
                 <a href="">Join Today</a>
             </div>
-        </section>
+        </div>
         <section class="body">
             <h1>Home</h1>
-            <section class="events-and-weather">
+            <div class="events-and-weather">
                 <section class="box">
                     <h2>Events</h2>
                     <div>
@@ -67,7 +67,7 @@
                 <section class="box">
                     <h2>Current Weather</h2>
                     <div id="current-weather">
-                        <img id="weather-icon" src="" alt="">
+                        <img id="weather-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADklEQVR4AWL6////fwAAAAD//w7I1cwAAAAGSURBVAMACgUD/9k79a8AAAAASUVORK5CYII=" alt="Weather Data is Loading">
                         <div>
                             <span id="current-temp"></span><br>
                             <span id="current-conditions"></span><br>
@@ -76,17 +76,18 @@
                             <span id="sunrise"></span><br>
                             <span id="sunset"></span><br>
                         </div>
+                    </div>
                 </section>
                 <section class="box">
-                    <h2>3-Hour Forecast</h2>
-                    <div id="three-hour-forecast">
+                    <h2>3-Day Forecast</h2>
+                    <div id="three-day-forecast">
                         
                     </div>
                 </section>
-            </section>
-            <section id="directory">
+            </div>
+            <div id="directory">
 
-            </section>
+            </div>
         </section>
     </main>
     <footer>

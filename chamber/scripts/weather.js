@@ -1,7 +1,7 @@
 const cityName = 'Villa Elisa, PY'
 const apiKey = 'e93f7c101440586913098cea82d4edf2';
 const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&cnt=8&appid=${apiKey}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&cnt=24&appid=${apiKey}`;
 
 async function apiFetch(url) {
     try {

@@ -1,18 +1,18 @@
 @media only screen and (min-width: 38rem) {
     /***************************** HERO IMAGE *****************************/
-    section.hero div {
+    .hero div {
         top: 30%;
         width: 60%;
         margin: 0px 20%;
     }
-    section.hero a {
+    .hero a {
         margin: 20px 20% 0 20%;
     }
-    section.hero div p::after {
+    .hero div p::after {
         content: "Discover the many benefits that the Villa Elisa Chamber of Commerce provides to your business by becoming a member. It is completely free!";
     }
     /***************************** EVENTS AND WEATHER *****************************/
-    section.events-and-weather {
+    .events-and-weather {
         grid-template-columns: 3fr 2fr 2fr;
         gap: 10px;
     }

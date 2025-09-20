@@ -1,6 +1,7 @@
 const url = './data/members.json';
 let members = [];
 let loaded_members = false;
+const membershipStandard = 1;
 const membershipSilver = 2;
 const membershipGold = 3;
 export async function getMembers() {
@@ -50,6 +51,16 @@ export function displayMembersInGrid(parent_element, members) {
         phoneDiv.innerHTML = member.phone;
         section.appendChild(phoneDiv);
 
+        const levelDiv = document.createElement('div');
+        if (member.membershipLevel === membershipStandard) {
+            levelDiv.innerHTML = 'Standard Member';
+        } else if (member.membershipLevel === membershipSilver) {
+            levelDiv.innerHTML = '<strong>Silver Member</strong>';
+        } else if (member.membershipLevel === membershipGold) {
+            levelDiv.innerHTML = '<strong class="highlight">Gold Member</strong>';
+        }
+        section.appendChild(levelDiv);
+        
         const websiteDiv = document.createElement('div');
         websiteDiv.innerHTML = `<a href="${member.website}" target="_blank">🔍 View Website</a>`;
         section.appendChild(websiteDiv);

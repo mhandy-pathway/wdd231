@@ -130,6 +130,9 @@ section.body h1 {
     font-weight: 700;
     font-size: 1.6rem;
 }
+strong.highlight {
+    color: var(--color1);
+}
 
 /***************************** BOX *****************************/
 section.box {

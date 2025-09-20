@@ -1,12 +1,12 @@
 /***************************** HERO IMAGE *****************************/
-section.hero {
+.hero {
     position: relative;
 }
-section.hero img {
+.hero img {
     width: 100%;
     height: auto;
 }
-section.hero div {
+.hero div {
     position: absolute;
     top: 10%;
     left: 0px;
@@ -20,10 +20,10 @@ section.hero div {
     padding: 10px;
 
 }
-section.hero div p::after {
+.hero div p::after {
     content: "Discover all of the membership benefits.";
 }
-section.hero a {
+.hero a {
     display: block;
     margin: 10px 20% 0 20%;
     padding: 4px 8px;
@@ -34,19 +34,19 @@ section.hero a {
     border: solid 4px black;
     border-radius: 10px;
 }
-section.hero a:hover {
+.hero a:hover {
     background-color: white;
     color: var(--color2);
 }
 
 /***************************** EVENTS AND WEATHER *****************************/
-section.events-and-weather {
+.events-and-weather {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
 div#current-weather,
-div#three-hour-forecast {
+div#three-day-forecast {
     text-align: center;
 }
 /***************************** DIRECTORY MEMBERS *****************************/
