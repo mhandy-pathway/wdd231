@@ -126,8 +126,40 @@ function refreshCourseContent(courseArray) {
         const card_div = document.createElement('div');
         card_div.classList.add(course.completed ? 'completed' : 'pending');
         card_div.innerHTML = `${course.subject} ${String(course.number)}`;
+        card_div.addEventListener('click', e => displayCourseDetails(course));
         courseCards_div.appendChild(card_div);
     });
+}
+function displayCourseDetails(course) {
+    const courseDetails = document.querySelector('dialog#course-details');
+    courseDetails.innerHTML = '';
+
+    const h2 = document.createElement('h2');
+    h2.textContent = `${course.subject} ${course.number}`;
+    courseDetails.appendChild(h2);
+
+    const p1 = document.createElement('p');
+    p1.textContent = `${course.credits} credits`;
+    courseDetails.appendChild(p1);
+
+    const p2 = document.createElement('p');
+    p2.textContent = `Certificate: ${course.certificate}`;
+    courseDetails.appendChild(p2);
+
+    const p3 = document.createElement('p');
+    p3.textContent = `${course.description}`;
+    courseDetails.appendChild(p3);
+
+    const p4 = document.createElement('p');
+    p4.textContent = `Technology: ${course.technology.join(', ')}`;
+    courseDetails.appendChild(p4);
+
+    const button = document.createElement('button');
+    button.textContent = 'Close';
+    button.addEventListener('click', e => courseDetails.close());
+    courseDetails.appendChild(button);
+
+    courseDetails.showModal();
 }
 // On Load - Run Refresh Course Content
 refreshCourseContent(courses);
