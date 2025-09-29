@@ -33,6 +33,21 @@ textarea {
     height: 150px;
     padding: 4px 8px 4px 18px;
 }
+button {
+    display: block;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background-color: var(--color2);
+    color: var(--color2-text);
+    font-weight: 700;
+    margin: 10px auto;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--color2-text);
+    color: var(--color2);
+}
 
 /***************************** MEMBERSHIP LEVEL ELEMENTS *****************************/
 section.membership-level {
@@ -43,8 +58,44 @@ section.membership-level {
     background-color: var(--color4);
     padding: 4px 8px;
     margin: 10px auto;
+    opacity: 0;
+}
+section.membership-level.show {
+    opacity: 1;
 }
 section.membership-level h2 {
     font-size: 1.2rem;
     font-weight: 700;
+}
+section.membership-level.np {
+    animation: showMembershipLevel 2s linear 0s 1;
+}
+section.membership-level.bronze {
+    animation: showMembershipLevel 2s linear 0.5s 1;
+}
+section.membership-level.silver {
+    animation: showMembershipLevel 2s linear 1s 1;
+}
+section.membership-level.gold {
+    animation: showMembershipLevel 2s linear 1.5s 1;
+}
+@keyframes showMembershipLevel {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.0);
+        border-color: black;
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1.0);
+        border-color: #ffd700;
+    }
+    100% {
+        opacity: 1;
+        border-color: black;
+    }
 }

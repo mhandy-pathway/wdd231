@@ -2,11 +2,18 @@
 const submittedOnInput = document.querySelector('#submitted-on');
 submittedOnInput.value = Date.now();
 
-// Membership Level Buttons
+// Add Events to Membership Level Buttons
 document.querySelector('#np-button').addEventListener('click', event => displayMembershipLevelInformation('np'));
 document.querySelector('#bronze-button').addEventListener('click', event => displayMembershipLevelInformation('bronze'));
 document.querySelector('#silver-button').addEventListener('click', event => displayMembershipLevelInformation('silver'));
 document.querySelector('#gold-button').addEventListener('click', event => displayMembershipLevelInformation('gold'));
+
+// Add Events to Membership Level Sections for Showing Post Animation
+document.querySelectorAll('section.membership-level').forEach(section => {
+    section.addEventListener('animationend', () => {
+        section.classList.add('show');
+    });
+})
 
 // MemberShip Level Dialog
 const membershipLevelDetails = {
