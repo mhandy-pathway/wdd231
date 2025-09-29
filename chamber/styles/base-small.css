@@ -156,6 +156,51 @@ section.box p:not(:first-child) {
     margin-top: 20px;
 }
 
+/***************************** DIALOG BOX *****************************/
+dialog {
+    width: 40%;
+    min-width: 300px;
+    margin: auto auto;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+dialog h2 {
+    background-color: var(--color2);
+    color: var(--color2-text);
+    font-weight: 700;
+    padding: 4px 8px;
+    border-bottom: solid 2px black;
+}
+dialog div {
+    padding: 4px 8px;
+}
+dialog div p:not(:first-child) {
+    margin-top: 20px;
+}
+dialog div strong {
+    color: var(--color1);
+}
+dialog div ul li {
+    padding-left: 20px;
+}
+
+/***************************** DIALOG BOX *****************************/
+button.main {
+    display: block;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background-color: var(--color2);
+    color: var(--color2-text);
+    font-weight: 700;
+    margin: 10px auto;
+    cursor: pointer;
+}
+button.main:hover {
+    background-color: var(--color2-text);
+    color: var(--color2);
+}
+
 /***************************** FOOTER *****************************/
 footer {
     min-height: 50px;

@@ -1,0 +1,4 @@
+/***************************** BODY ELEMENTS *****************************/
+section.body > p {
+    padding-bottom: 15px;
+}

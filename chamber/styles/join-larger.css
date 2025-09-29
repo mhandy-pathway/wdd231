@@ -1,0 +1,8 @@
+@media only screen and (min-width: 38rem) {
+    section.body {
+        grid-template-columns: 1fr 1fr;
+    }
+    section.body h1 {
+        grid-column: 1/3;
+    }
+}
