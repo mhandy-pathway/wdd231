@@ -1,0 +1,99 @@
+:root {
+    --color1: #780000;
+    --color2: #003049;
+    --color3: #fdf0d5;
+    --color4: white;
+    --accent1: #c1121f;
+    --accent2: #669bbc;
+    --color1-text: white;
+    --color2-text: white;
+    --color3-text: black;
+    --color4-text: black;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13pt;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: var(--color3);
+}
+
+html,
+body,
+header,
+main,
+nav,
+footer {
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+/***************************** HEADER *****************************/
+header {
+    background-color: var(--color2);
+    padding: 10px 20px;
+}
+header h1 {
+    color: var(--color2-text);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+/***************************** MAIN *****************************/
+main {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    padding: 10px 20px;
+}
+section h2 {
+    color: var(--color1);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+section p {
+    margin-bottom: 10px;
+}
+section ul {
+    padding: 0 0 0 20px;
+}
+section div.color {
+    padding: 20px;
+    border: solid 1px black;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+}
+section div.color1 {
+    background-color: var(--color1);
+    color: var(--color1-text);
+}
+section div.color2 { 
+    background-color: var(--color2);
+    color: var(--color2-text);
+}
+section div.color3 {
+    background: var(--color3);
+    color: var(--color3-text);
+}
+section p.color {
+    text-align: center;
+}
+section img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+strong {
+    font-weight: 700;
+}

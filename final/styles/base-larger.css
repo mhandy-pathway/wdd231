@@ -1,0 +1,41 @@
+@media only screen and (min-width: 34rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        box-sizing: border-box;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    /***************************** MAIN *****************************/
+    div.color-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.color1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    div.color2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    div.color3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    p.color1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    p.color2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    p.color3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}
