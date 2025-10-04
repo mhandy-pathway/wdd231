@@ -11,4 +11,7 @@
         width: 200px;
         height: 100%;
     }
+    #discover-places section figure img {
+        border-radius: 10px 0 0 10px;
+    }
 }

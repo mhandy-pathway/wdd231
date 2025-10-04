@@ -7,13 +7,22 @@
     #discover-places section {
         margin: 10px;
     }
+    #discover-places section:nth-child(even) {
+        grid-template-areas: 
+        "name image"
+        "address image"
+        "description image"
+        "button image";
+    }
     #discover-places section figure {
         width: 150px;
         height: 100%;
     }
     #discover-places section figure img {
-        border-radius: 10px 0 0 10px;
         transition: border-radius 1s ease, filter 1s ease;
+    }
+    #discover-places section:nth-child(even) figure img {
+        border-radius: 0 10px 10px 0;
     }
     #discover-places section figure img:hover {
         border-radius: 200px;
