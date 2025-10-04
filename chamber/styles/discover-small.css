@@ -1,0 +1,54 @@
+/***************************** DISCOVER PLACES *****************************/
+#discover-places section {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "address"
+    "description"
+    "button";
+}
+#discover-places section h2 {
+    grid-area: name;
+    color: var(--color1);
+    font-weight: 700;
+    padding: 4px 8px;
+}
+#discover-places section figure {
+    grid-area: image;
+    height: 150px;
+}
+#discover-places section figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+#discover-places section address {
+    grid-area: address;
+    font-style: italic;
+    padding: 4px 8px;
+}
+#discover-places section p {
+    grid-area: description;
+    padding: 4px 8px;
+}
+#discover-places section button {
+    grid-area: button;
+    margin: 4px auto;
+    display: block;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background-color: var(--color2);
+    color: var(--color2-text);
+    font-weight: 700;
+}
+#discover-places section button:hover {
+    background-color: var(--color1);
+}

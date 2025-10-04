@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Elisa Chamber of Commerce - Directory of Local Businesses</title>
-    <meta name="description" content="A Directory of Local Businesses from the Villa Elisa Chamber of Commerce">
+    <title>Villa Elisa Chamber of Commerce - Discover Local Places</title>
+    <meta name="description" content="Discover Local Places in Villa Elisa">
     <meta name="author" content="Matt Handy">
-    <meta property="og:title" content="Villa Elisa Chamber of Commerce - Directory of Local Businesses">
+    <meta property="og:title" content="Villa Elisa Chamber of Commerce - Discover Local Places">
     <meta property="og:description"
-        content="A directory listing of businesses in Villa Elisa, Paraguay. The Chamber of Commerce has worked tirelessly to compile this information to help our citizens find the services that they need.">
+        content="Discover cool places in Villa Elisa. This list of places will surely help you to find a place to go this weekend.">
     <meta property="og:image" content="https://mhandy-pathway.github.io/wdd231/chamber/images/villa-elisa.webp">
     <meta property="og:url" content="https://mhandy-pathway.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
@@ -20,12 +20,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base-small.css">
-    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/discover-small.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
     <link rel="stylesheet" href="styles/base-larger.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
+    <link rel="stylesheet" href="styles/discover-larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/directory.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -35,21 +36,16 @@
         <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
         <nav id="nav">
             <a href="./">Home</a>
-            <a href="directory.html" class="current">Directory</a>
+            <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
-            <a href="discover.html">Discover</a>
+            <a href="discover.html" class="current">Discover</a>
         </nav>
     </header>
     <main>
         <section class="body">
-            <h1>Business Directory</h1>
-            <section class="directory-btns">
-                <img src="images/grid.svg" id="gridButton" alt="View Members in Grid">
-                <img src="images/list.svg" id="listButton" alt="View Members in List">
-            </section>
-            <section id="directory">
-
-            </section>
+            <h1>Discover Local Places</h1>
+            <div id="last-visit"></div>
+            <div id="discover-places"></div>
         </section>
     </main>
     <footer>

@@ -1,0 +1,22 @@
+@media only screen and (min-width: 700px) {
+    /***************************** DISCOVER PLACES *****************************/
+    #discover-places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #discover-places section {
+        margin: 10px;
+    }
+    #discover-places section figure {
+        width: 150px;
+        height: 100%;
+    }
+    #discover-places section figure img {
+        border-radius: 10px 0 0 10px;
+        transition: border-radius 1s ease, filter 1s ease;
+    }
+    #discover-places section figure img:hover {
+        border-radius: 200px;
+        filter: saturate(250%);
+    }
+}

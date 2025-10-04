@@ -1,0 +1,14 @@
+@media only screen and (min-width: 450px) {
+    /***************************** DISCOVER PLACES *****************************/
+    #discover-places section {
+        grid-template-areas: 
+        "image name"
+        "image address"
+        "image description"
+        "image button";
+    }
+    #discover-places section figure {
+        width: 200px;
+        height: 100%;
+    }
+}
