@@ -1,0 +1,8 @@
+/***************************** PACKAGE SENT SMALL CSS *****************************/
+section.body > div {
+    max-width: 500px;
+    margin: 0 auto;
+}
+section.body section.box {
+    margin-top: 20px;
+}

@@ -1,0 +1,9 @@
+@media only screen and (min-width: 38rem) {
+    /***************************** PACKAGES LARGER CSS *****************************/
+    section.body {
+    grid-template-areas:
+        "headline headline"
+        "form instructions"
+        ;
+}
+}

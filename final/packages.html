@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Packages to Your Missionary | Paraguay Missionary Portal</title>
+    <meta name="description" content="Send Packages to your missionary through a verified courier in the United States. Shipments leave twice per week.">
+    <meta name="author" content="Matt Handy">
+    <meta property="og:title" content="Send Packages to Your Missionary | Paraguay Missionary Portal">
+    <meta property="og:description"
+        content="Send Packages to your missionary through a verified courier in the United States. Shipments leave twice per week.">
+    <meta property="og:image" content="https://mhandy-pathway.github.io/wdd231/final/images/hero.webp">
+    <meta property="og:url" content="https://mhandy-pathway.github.io/wdd231/final/packages.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/packages-small.css">
+    <link rel="stylesheet" href="styles/base-larger.css">
+    <link rel="stylesheet" href="styles/packages-larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/packages.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="images/missionary.webp" alt="Missionary" width="50" height="50">
+        <span>Paraguay Missionary Portal</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+        <nav id="nav">
+            <a href="./">Home</a>
+            <a href="packages.html" class="current">Send Packages</a>
+            <a href="products.html">Purchase Products</a>
+            <a href="recipes.html">Discover Recipes</a>
+        </nav>
+    </header>
+    <main>
+        <section class="body">
+            <h1>Send a Package Through a U.S.A. Courier</h1>
+            <form method="get" action="packagesent.html">
+                <label>First Name <input type="text" name="firstName" autocomplete="given-name" title="Your First Name" required></label>
+                <label>Last Name <input type="text" name="lastName" autocomplete="family-name" title="Your Last Name" required></label>
+                <label>Email Address <input type="email" name="emailAddress" autocomplete="email" title="Your Email Address" placeholder="name@organization.com" required></label>
+                <label>Mobile Phone # <input type="tel" name="mobileNumber" autocomplete="mobile" title="Your Mobile Phone #" required></label>
+                <label>Missionary Name <input type="text" name="missionaryName" title="The Name of the Missionary you are sending a package to" required></label>
+                <div class="label-group">Mission:</div>
+                <label class="radio-option"><input type="radio" name="mission" value="Paraguay Asunción" required> Paraguay Asunción</label>
+                <label class="radio-option"><input type="radio" name="mission" value="Paraguay Asunción North" required> Paraguay Asunción North</label>
+                <label>Tracking # <input type="text" name="trackingNumber" title="The Tracking # of the Package you Sent" pattern="[A-Za-z0-9\-]{7,}" required></label>
+                <input type="hidden" name="formSubmittedOn" id="submitted-on">
+                <button type="submit">Register Package</button>
+            </form>
+            <div class="instructions">
+                <section class="box">
+                    <h2>Instructions</h2>
+                    <div>
+                        <p>To send a package to your missionary, please send your package to the following address in Utah and then fill out the following registration form to let us know the package is on its way. We will contact you with payment information once the package has arrived and has been weighed.</p>
+                        <p>
+                            <strong>Courier Address:</strong><br>
+                            Fake street address<br>
+                            Pleasant Grove, UT, 84602<br>
+                            U.S.A.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            Paraguay Missionary Portal<br>
+            Ntra Sra de la Asu 1117<br>
+            Villa Elisa, Paraguay<br>
+            +595 982 259 998
+        </div>
+        <div>
+            <nav>
+                <a href="https://github.com/mhandy-pathway/wdd231" target="_blank"><img src="images/github.svg"
+                        alt="GitHub Repository" width="44" height="44"></a>
+                <a href="https://www.linkedin.com/in/handymatt/" target="_blank"><img src="images/linkedin.svg"
+                        alt="LinkedIn Profile" width="44" height="44"></a>
+                <a href="https://www.facebook.com/matt.handy.90" target="_blank"><img src="images/facebook.svg"
+                        alt="Facebook Profile" width="44" height="44"></a>
+                <a href="https://api.whatsapp.com/send?phone=595982259998" target="_blank"><img
+                        src="images/whatsapp.svg" alt="WhatsApp Number"></a>
+            </nav>
+            <a href="https://youtu.be/VIzMbMV12Pg" target="_blank" class="main">View Video Demonstration</a>
+        </div>
+        <div>
+            Matt Handy<br>
+            WDD231 - Dynamic Web Fundamentals<br>
+            <span id="currentyear"></span> Paraguay Missionary Portal<br>
+            <span id="lastModified"></span>
+        </div>
+    </footer>
+</body>
+</html>

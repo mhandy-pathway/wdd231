@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "JIF Peanut Butter - 16 OZ",
+        "image": "images/products/jif.webp",
+        "price": 6.99
+    },
+    {
+        "id": 2,
+        "name": "A&W Root Beer - 6 Pack",
+        "image": "images/products/rootbeer.webp",
+        "price": 7.49
+    },
+    {
+        "id": 3,
+        "name": "Kraft Macaroni & Cheese",
+        "image": "images/products/macandcheese.webp",
+        "price": 3.75
+    },
+    {
+        "id": 4,
+        "name": "Sweet Baby Ray's BBQ Sauce",
+        "image": "images/products/bbq.webp",
+        "price": 4.25
+    },
+    {
+        "id": 5,
+        "name": "Kraft Ranch Dressing - 16 OZ",
+        "image": "images/products/ranch.webp",
+        "price": 5.25
+    },
+    {
+        "id": 6,
+        "name": "Swedish Fish Candy - 2 OZ",
+        "image": "images/products/swedishfish.webp",
+        "price": 2.25
+    },
+    {
+        "id": 7,
+        "name": "Snickers Candy Bar - 2 OZ",
+        "image": "images/products/snickers.webp",
+        "price": 1.75
+    },
+    {
+        "id": 8,
+        "name": "Cheetos",
+        "image": "images/products/cheetos.webp",
+        "price": 4.30
+    },
+    {
+        "id": 9,
+        "name": "Chocolate Covered Almonds",
+        "image": "images/products/almonds.webp",
+        "price": 11.45
+    },
+    {
+        "id": 10,
+        "name": "Whole Cashews",
+        "image": "images/products/cashews.webp",
+        "price": 15.99
+    }
+]

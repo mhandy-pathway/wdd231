@@ -1,0 +1,66 @@
+/***************************** PACKAGES SMALL CSS *****************************/
+section.body {
+    display: grid;
+    grid-template-areas:
+        "headline"
+        "instructions"
+        "form"
+        ;
+    gap: 20px;
+}
+section.body h1 {
+    grid-area: headline;
+}
+section.body > form {
+    grid-area: form;
+    max-width: 400px;
+    margin: 0 auto;
+}
+section.body > div.instructions {
+    grid-area: instructions;
+}
+label,
+div.label-group {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+label.radio-option {
+    font-weight: 400;
+}
+input[type=text],
+input[type=email],
+input[type=tel] {
+    display: block;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    width: 250px;
+    border-left: solid 10px green;
+}
+input[type=text]:invalid,
+input[type=email]:invalid,
+input[type=tel]:invalid {
+    border-left: solid 10px #990000;
+}
+textarea {
+    display: block;
+    width: 250px;
+    height: 150px;
+    padding: 4px 8px 4px 18px;
+}
+button {
+    display: block;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background-color: var(--color2);
+    color: var(--color2-text);
+    font-weight: 700;
+    margin: 10px auto;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--color2-text);
+    color: var(--color2);
+}

@@ -1,0 +1,66 @@
+/***************************** PRODUCTS SMALL CSS *****************************/
+#product_list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+#product_list section {
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#product_list section img {
+    width: 100%;
+    height: auto;
+}
+#product_list section h2 {
+    color: var(--color1);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+}
+#product_list section span {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+}
+#product_list section button {
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: var(--color2);
+    color: var(--color2-text);
+    padding: 4px 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#product_list section button:hover {
+    background-color: var(--color2-text);
+    color: var(--color2);
+}
+
+
+/********** SHOPPING CART **********/
+.cart div.item {
+    display: grid;
+    grid-template-columns: 50px auto 50px 40px;
+    gap: 10px;
+}
+.cart div.item img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.cart div.item span {
+    padding: 4px 0;
+    margin: auto 0;
+}
+.cart div.total {
+    text-align: center;
+    font-weight: 700;
+}
+.cart div.total strong {
+    color: var(--color1);
+}

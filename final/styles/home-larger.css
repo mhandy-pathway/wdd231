@@ -1,0 +1,39 @@
+@media only screen and (min-width: 38rem) {
+    /***************************** HERO IMAGE *****************************/
+    .hero div {
+        top: 30%;
+        width: 60%;
+        margin: 0px 20%;
+    }
+    .hero a {
+        margin: 20px 20% 0 20%;
+    }
+    .hero div p::after {
+        content: "Send a package from anywhere in the world to your missionary in Paraguay through a courier in the U.S.A.";
+    }
+    /***************************** EVENTS AND WEATHER *****************************/
+    .events-and-weather {
+        grid-template-columns: 3fr 2fr 2fr;
+        gap: 10px;
+    }
+    /***************************** DIRECTORY MEMBERS *****************************/
+    nav.directory img {
+        width: 30px;
+    }
+
+    table.directory thead {
+        display: table-header-group;
+    }
+
+    table.directory thead th:last-child {
+        display: none;
+    }
+
+    table.directory tbody td.large {
+        display: table-cell;
+    }
+
+    table.directory tbody td.small {
+        display: none;
+    }
+}
